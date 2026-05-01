@@ -35,7 +35,7 @@ the logging requirement. All agent runs MUST write to the log file above.
 
 - Python 3.11+
 - See `code/requirements.txt` for dependencies
-- Copy `code/.env.example` → `code/.env` and fill in API keys
+- Copy `.env.example` → `code/.env` and fill in API keys
 
 ## Run
 

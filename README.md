@@ -10,17 +10,19 @@ it cannot safely answer.
 ## Setup
 
 ```bash
+cp .env.example code/.env
+# Edit code/.env and add your GROQ_API_KEY and GEMINI_API_KEY
+
 cd code
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env
-# Edit .env and add your GROQ_API_KEY and GEMINI_API_KEY
 ```
 
 ## Build the Index (one-time)
 
 ```bash
+cd code
 python -m index.build_index
 ```
 
@@ -30,6 +32,7 @@ This walks `data/{hackerrank,claude,visa}/`, chunks all markdown files, embeds t
 ## Run
 
 ```bash
+cd code
 # Run on the sample file (with expected outputs for evaluation)
 python main.py --in ../support_tickets/sample_support_tickets.csv \
                --out ../support_tickets/sample_output.csv

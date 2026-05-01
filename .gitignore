@@ -9,6 +9,7 @@ __pycache__/
 # Secrets
 .env
 code/.env
+.env.local
 
 # Generated index (large binary)
 code/index/store/
@@ -24,3 +25,4 @@ support_tickets/output.jsonl
 .vscode/
 .idea/
 support_tickets/*.jsonl
+support_tickets/sample_output.csv
