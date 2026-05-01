@@ -1,0 +1,26 @@
+ticket_id,company,subject,issue
+R001,HackerRank,How do I change my display name?,I want to update my display name on my HackerRank profile but can't find the option.
+R002,Claude,Forgot password and can't get back in,I forgot my Claude password and can't log in. Please help me reset it.
+R003,Visa,Unauthorized charge on my card,There is a $300 charge from an online store I have never heard of. I did not make this purchase. Please reverse this charge immediately.
+R004,HackerRank,My solution gives wrong answer but works locally,My Python solution passes all sample test cases but gets wrong answer on hidden ones. I have tested it with many inputs and it seems correct.
+R005,Claude,Can you add dark mode to Claude?,I would love a dark mode option for the Claude interface. My eyes hurt using the bright white background at night. Please add this feature.
+R006,Visa,How do I report my lost card?,I cannot find my Visa card and I am worried it might have been stolen. What steps should I take?
+R007,HackerRank,Accused of cheating on my assessment,The company flagged my assessment for plagiarism but I wrote every line myself. I am deeply upset and want to appeal this decision.
+R008,Claude,How do I cancel my Claude Pro subscription?,I want to cancel my Claude Pro subscription. Can you tell me how to do that and whether I get a refund?
+R009,Visa,Can I use my Visa card in Europe?,I am traveling to France next month and want to know if my Visa card will work there and if there are extra fees.
+R010,HackerRank,My IDE is frozen during the test,The in-browser IDE stopped responding 20 minutes into my coding test. I cannot type or submit. Help urgently.
+R011,Claude,My account has been suspended,I cannot log in to Claude and it says my account has been suspended. I have not done anything wrong. Please restore my access.
+R012,Visa,How do I change my PIN?,I want to change my Visa card PIN. I know my current PIN but want to update it to something easier to remember.
+R013,HackerRank,asdf asdf asdf,lol nothing just testing 123
+R014,Claude,How many messages can I send per day on the free plan?,I am on the free plan and want to know exactly how many messages I can send before I hit the daily limit.
+R015,Visa,Lawyer notice — I am taking legal action,I have been incorrectly charged for months and my disputes have been ignored. My lawyer will be in contact. This is your last chance to resolve this before I file a lawsuit.
+R016,HackerRank,How do I earn a Python certificate?,I want to get the HackerRank Python certificate. Can you tell me how to take the test and what score I need to pass?
+R017,Claude,API key not working,I created an API key in the console but all my requests return 401 Unauthorized. I am using the key in the x-api-key header.
+R018,Visa,Rewards points missing,I made a large purchase last week but the rewards points have not shown up in my account. It has been 10 days now.
+R019,HackerRank,Can you add more languages to the IDE?,I would love to see Rust supported in the HackerRank coding environment. Currently I have to use C++ which is not my strongest language.
+R020,Claude,How do I delete all my conversations?,I want to wipe my entire conversation history with Claude for privacy reasons. How do I do this?
+R021,Visa,Double charged at a restaurant,I was charged twice for the same dinner last Friday — once for $45.20 and again for the same amount. I only had one meal.
+R022,HackerRank,Time limit exceeded on all test cases,My solution works perfectly on the sample inputs but every hidden test case gets TLE. My algorithm should be O(n log n). Any advice?
+R023,Claude,Can I share Claude with my team?,We are a team of 8 people. Can we all share one Claude Pro account or do we each need our own? What is the best plan for teams?
+R024,Visa,Card declined in Japan,My Visa card was declined at multiple stores in Tokyo even though I have enough balance. I notified my bank before travel. What should I do?
+R025,HackerRank,Assessment invitation expired,The coding assessment link I received from the company expired before I could take it. Can HackerRank extend the deadline?

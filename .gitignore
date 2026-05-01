@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+*.egg-info/
+
+# Secrets
+.env
+code/.env
+
+# Generated index (large binary)
+code/index/store/
+
+# Debug sidecar
+code/output.jsonl
+support_tickets/output.jsonl
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+support_tickets/*.jsonl
