@@ -20,19 +20,19 @@ from agent.retriever import Retriever
 
 random.seed(config.SEED)
 
-LOG_DIR = Path.home() / "hackerrank_orchestrate"
-LOG_FILE = LOG_DIR / "log.txt"
+LOG_DIR = None  # set after first log call, for display in summary
+LOG_FILE = None
 
 OUTPUT_COLUMNS = ["ticket_id", "company", "subject", "issue",
                   "status", "product_area", "response", "justification", "request_type"]
 
 
 def _log(stage: str, ticket_id: str, message: str) -> None:
-    LOG_DIR.mkdir(parents=True, exist_ok=True)
-    ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    line = f"[{ts}] [{stage}] [{ticket_id}] {message}\n"
-    with open(LOG_FILE, "a") as f:
-        f.write(line)
+    global LOG_DIR, LOG_FILE
+    from agent.logger import log, LOG_DIR as _ld, LOG_FILE as _lf
+    log(stage, ticket_id, message)
+    LOG_DIR = _ld
+    LOG_FILE = _lf
 
 
 def main() -> None:

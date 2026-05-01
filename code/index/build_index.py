@@ -106,7 +106,7 @@ def build_index(force: bool = False) -> None:
         sys.exit(1)
 
     print(f"Loading embedding model: {config.EMBEDDING_MODEL} ...")
-    model = SentenceTransformer(config.EMBEDDING_MODEL)
+    model = SentenceTransformer(config.EMBEDDING_MODEL, local_files_only=True)
 
     texts = [c["text"] for c in chunks]
     print(f"Embedding {len(texts)} chunks in batches of 64 ...")

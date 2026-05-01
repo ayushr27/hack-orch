@@ -32,7 +32,10 @@ class Retriever:
             self._chunks = [json.loads(line) for line in f]
 
         from sentence_transformers import SentenceTransformer
-        self._model = SentenceTransformer(config.EMBEDDING_MODEL)
+        self._model = SentenceTransformer(
+            config.EMBEDDING_MODEL,
+            local_files_only=True,  # use cached model, never try to reach HuggingFace
+        )
 
     def search(self, query: str, company: str | None, k: int = 5) -> list[dict]:
         """Return top-k chunks sorted by cosine similarity (descending)."""

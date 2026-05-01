@@ -58,6 +58,7 @@ def _groq_call(model: str, system: str, user: str, max_tokens: int) -> dict:
         temperature=config.TEMPERATURE,
         max_tokens=max_tokens,
         response_format={"type": "json_object"},
+        timeout=60,  # never hang more than 60s on a single request
     )
     return _parse_json(response.choices[0].message.content)
 
@@ -113,6 +114,7 @@ def chat(
         resp = client.models.generate_content(
             model=config.FALLBACK_MODEL,
             contents=prompt,
+            config={"http_options": {"timeout": 60}},
         )
         return _parse_json(resp.text)
     except Exception as fallback_exc:
