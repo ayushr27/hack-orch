@@ -26,3 +26,6 @@ support_tickets/output.jsonl
 .idea/
 support_tickets/*.jsonl
 support_tickets/sample_output.csv
+
+# Internal planning
+IMPLEMENTATION_PLAN.md
